@@ -9,6 +9,18 @@
 - **Version**: 1.0
 - **Related ATT&CK Technique**: [T1218.010 - Regsvr32](https://attack.mitre.org/techniques/T1218/010/)
 - **Author**: Cybersecurity Team
+- **Rule TLP**: White
+
+## Table of Contents
+1. [Metadata](#Metadata)
+2. [Table of Contents](#Table-of-Contents)
+3. [Executive Summary](#Executive-Summary)
+4. [Technical Context](#Technical-Context)
+5. [Legitimate Use Cases](#Legitimate-Use-Cases)
+6. [Malicious Use Cases](#Malicious-Use-Cases)
+7. [Data Sources](#Data-Sources)
+8. [Detection](#Detection)
+9. [References](#References)
 
 #### Objective
 
