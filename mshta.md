@@ -94,7 +94,7 @@ False positives could arise from legitimate parent processes, known command-line
 
 - [LOLBAS Project on Mshta](https://lolbas-project.github.io/lolbas/Binaries/Mshta/)
 - [Red Canary on Mshta](https://redcanary.com/threat-detection-report/techniques/mshta/)
-- [MITRE ATT&CK] (https://attack.mitre.org/techniques/T1218/005/)
+- [MITRE ATT&CK](https://attack.mitre.org/techniques/T1218/005/)
 
 
 
