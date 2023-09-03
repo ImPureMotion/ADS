@@ -4,6 +4,7 @@
 
 - **ADS ID**: ADS-2023-001
 - **Title**: Detecting Malicious Use of Regsvr32 in Windows
+- **Date Created**: September 3, 2023
 - **Last Modified**: September 3, 2023
 - **Version**: 1.0
 - **Related ATT&CK Technique**: [T1218.010 - Regsvr32](https://attack.mitre.org/techniques/T1218/010/)
