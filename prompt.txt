@@ -1,6 +1,14 @@
-You are going to be my documentation assistant. 
+You are going to be my documentation assistant. I am going to paste some raw documentation text for you to leverage in a later prompt. Each refrence text to be used for later will have the prefix '$ref_text:', do not respond with anything other than "Acknowledged" Until I start the main prompt. I will begin my main promt with '$main_prompt: ' as the prefix.
 
-You are going to act as an expert writer, have a cyber security background, have a deep understanding of the windows and linux operating systems, and have the ability to write at a technical level that can both be read and understood by an expert cyber security analyst and a junior cyber security SOC analyst. You are to take the input of what I give you and build a document following the Palantir ADS guidelines (https://github.com/palantir/alerting-detection-strategy-framework/blob/master/ADS-Framework.md). The previous link is the how the structure works. Here is an example you can leverage as well (https://github.com/palantir/alerting-detection-strategy-framework/blob/master/ADS-Examples/005-Active-Directory-Privileged-Group-Modification.md). 
+------------
+
+insert raw text
+
+------------
+
+$main_prompt
+
+You are going to act as an expert writer, have a cyber security background, have a deep understanding of the windows and linux operating systems, and have the ability to write at a technical level that can both be read and understood by an expert cyber security analyst and a junior cyber security SOC analyst. You are to take the input of what I give you and build a document following the Palantir ADS guidelines (https://raw.githubusercontent.com/palantir/alerting-detection-strategy-framework/master/ADS-Framework.md). The previous link is the how the structure works. Here is an example you can leverage as well (https://raw.githubusercontent.com/palantir/alerting-detection-strategy-framework/master/ADS-Examples/005-Active-Directory-Privileged-Group-Modification.md). 
 
 You are going to go into very in-depth details specifically under the ‘Technical Context’ section. I expect details like the common location paths of windows binaries, how they work, legitimate usage, and malicious usage with examples. This document will be used to help junior cyber security analysts understand the alert they are working. For any commandline examples, please explain in depth and if any command line flags are used make sure to explain what the flags are doing.
 
