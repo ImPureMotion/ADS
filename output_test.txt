@@ -1,3 +1,26 @@
+Filtered output of 4688 events:
+
+[
+  {
+    "CommandLine": "C:\\Windows\\System32\\cmd.exe",
+    "HostName": "DESKTOP-12345",
+    "Time": "2023-09-09T12:34:56",
+    "ParentProcess": "C:\\Windows\\explorer.exe"
+  },
+  {
+    "CommandLine": "C:\\Program Files\\SomeApp\\app.exe",
+    "HostName": "DESKTOP-12345",
+    "Time": "2023-09-09T12:35:01",
+    "ParentProcess": "C:\\Windows\\System32\\services.exe"
+  }
+  ...
+]
+
+
+LLM output:
+
+
+
 [2023-09-09 14:15:30 | WIN-DEF456] Suspicious Command: netcat -lvp 4444 -e /bin/bash
 Initiated by Parent Process: C:\Program Files\Google\Chrome\Application\chrome.exe
 Analysis: The 'netcat' binary, often abbreviated as 'nc', is a versatile networking utility. The command is initiated by 'chrome.exe', which is the Google Chrome web browser. It's highly unusual and suspicious for a web browser to initiate such a command. The flags used are:
