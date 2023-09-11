@@ -1,0 +1,16 @@
+[2023-09-09 14:15:30 | WIN-DEF456] Suspicious Command: netcat -lvp 4444 -e /bin/bash
+Initiated by Parent Process: C:\Program Files\Google\Chrome\Application\chrome.exe
+Analysis: The 'netcat' binary, often abbreviated as 'nc', is a versatile networking utility. The command is initiated by 'chrome.exe', which is the Google Chrome web browser. It's highly unusual and suspicious for a web browser to initiate such a command. The flags used are:
+- '-l': Puts netcat into listening mode, allowing it to accept incoming connections.
+- '-v': Enables verbose mode.
+- '-p 4444': Specifies the port number (4444 in this case) on which netcat will listen for incoming connections.
+- '-e /bin/bash': This is a major red flag. It tells netcat to execute '/bin/bash' upon receiving a connection, effectively providing the connecting party with a shell access to the system.
+Given the combination of these flags and the parent process, this command is highly suspicious. It appears to set up a reverse shell, potentially due to a malicious browser extension or compromised website.
+
+[2023-09-09 14:00:45 | WIN-ABC123] Suspicious Command: powershell -ExecutionPolicy Bypass -NoLogo -NonInteractive -NoProfile -WindowStyle Hidden -File malicious.ps1
+Initiated by Parent Process: C:\Windows\System32\explorer.exe
+Analysis: The 'powershell' binary is the Windows PowerShell command-line shell. The command is initiated by 'explorer.exe', which is the Windows File Explorer. While 'explorer.exe' is a legitimate process, it's unusual for it to initiate such a command. The flags used in the command are:
+- '-ExecutionPolicy Bypass': This allows the script to run without any execution policy restrictions, which can be a security risk.
+- '-NoLogo' and '-WindowStyle Hidden': These flags are used to make the script's execution less noticeable.
+- '-File malicious.ps1': Executes the specified script file. The name 'malicious.ps1' itself is a red flag.
+Given these flags and the parent process, this command is highly suspicious as it seems to be trying to execute a potentially malicious script without drawing attention.
